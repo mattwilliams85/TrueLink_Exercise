@@ -1,0 +1,27 @@
+.sideNav {
+  background-color: #0c4a6a;
+  color: #fff;
+  height: 100%;
+  min-width: 300px;
+  padding: 32px;
+  box-sizing: border-box;
+  transform: translateX(-300px);
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.link {
+  margin-bottom: 32px;
+  font-size: 21px;
+}
+
+.isOpen {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 600px) {
+  .sideNav {
+    transform: translateX(0);
+    position: relative;
+  }
+}

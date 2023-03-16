@@ -1,0 +1,46 @@
+.card {
+  padding: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 0 24px 32px 0;
+}
+
+.title {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.year {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.card img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #e5e5e5;
+}
+
+.poster {
+  display: inline-block;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  text-overflow: ellipsis;
+}
+
+.close {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .card img {
+    width: 400px;
+  }
+}

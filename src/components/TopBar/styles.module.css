@@ -1,0 +1,72 @@
+.topBar {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #189cc1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hamburger {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* Hamburger */
+.line {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;  
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.line:nth-child(1)
+{
+  transform-origin: 0% 0%;
+}
+
+.line:nth-child(3)
+{
+  transform-origin: 0% 100%;
+}
+
+
+.line.open {
+  opacity: 1;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+/* End */
+
+
+@media screen and (min-width: 600px) {
+  .topBar {
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+}
